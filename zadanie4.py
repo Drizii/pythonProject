@@ -1,12 +1,5 @@
-lista = ["ala ma kota", "kuba ma brode", "wojtek ma skilla"]
+from core import fetch_data_from_user, spliter, display_data_from_user
 
-
-def spliter(lista):
-    result = []
-    for row in lista:
-        for word in row.split():
-            result.append(f"{word.capitalize()} {len(word)}")
-    return result
-
-
-print(spliter(lista))
+sentence = fetch_data_from_user()
+splited_sentence = spliter(sentence)
+display_data_from_user(splited_sentence)
