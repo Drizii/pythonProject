@@ -28,3 +28,11 @@ def save_data_from_user(splited_sentence):
     with open("result.txt", "w") as file:
         for row in splited_sentence:
             file.write(row + "\n")
+
+
+def read_data_from_file():
+    with open("result_zadanie6.txt", "r") as file:
+        result = []
+        for row in file:
+            result.append(row)
+        return result
