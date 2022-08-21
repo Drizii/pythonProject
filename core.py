@@ -1,7 +1,3 @@
-import os
-# sentence = ["ala ma kota", "kuba ma brode", "wojtek ma depresje"]
-
-
 def spliter(sentence):
     result = []
     for row in sentence:
@@ -32,7 +28,3 @@ def save_data_from_user(splited_sentence):
     with open("result.txt", "w") as file:
         for row in splited_sentence:
             file.write(row + "\n")
-
-
-
-# print(spliter(sentence))
