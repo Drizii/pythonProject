@@ -1,5 +1,6 @@
 import requests
 
+
 class Employee:
 
     raise_amt = 1.05
