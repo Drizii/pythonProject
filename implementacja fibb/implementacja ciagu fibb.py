@@ -29,7 +29,7 @@ def fibb2(n):
     return (rec_fibb(a) for a in range(n))
 
 
-# Implementacja ciągu fibonacciego przez iterator
+# Implementacja ciągu fibonacciego przez iteratora
 class FibIterator:
 
     def __init__(self, n):
