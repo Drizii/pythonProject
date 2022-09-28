@@ -1,16 +1,15 @@
-x = "take"
-import  string
-
-def high(x):
-    dict_letters_points = {}
-    points = 0
-    for letter in string.ascii_lowercase:
-        dict_letters_points[letter] = (ord(letter) - 96)
-    for word in x:
-        for let in word.split():
-            points = points + dict_letters_points[let]
-
-    print(points)
+num = 9119
 
 
-high(x)
+def square_digits(num):
+    numStr = str(num)
+    output = []
+    for n in numStr:
+        n = int(n)
+        output.append(n**2)
+    outputStr = [str(int) for int in output]
+    return int("".join(outputStr))
+
+
+
+print(square_digits(num))
